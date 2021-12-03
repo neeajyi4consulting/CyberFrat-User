@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.lineInBetween {
+    display: flex;
+    flex-direction: row;
+    background-color: #e5e7eb;
+  }
+  .lineInBetween:before, .lineInBetween:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+    background-color: #e5e7eb;
+  }
+  .lineInBetween:before {
+    margin-right: 10px;
+    background-color: #e5e7eb;
+  }
+  .lineInBetween:after {
+    margin-left: 10px;
+    background-color: #e5e7eb;
+  }
